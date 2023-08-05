@@ -8,7 +8,7 @@ export const Profile = ({items: {avatar, location, stats, tag, username}}) => {
       class="avatar"
     />
     <p class="name">{username}</p>
-    <p class="tag">@p{tag}</p>
+    <p class="tag">@{tag}</p>
       <p class="location">{location}</p>
   </div>
 
