@@ -1,14 +1,16 @@
+import { StatisticsItem } from "./Statistics-item"
+
 export const Statistics = ({ title, stats }) => {
-  console.log(stats)
+ 
   return <section class="statistics">
   <h2 class="title">{title}</h2>
 
-  <ul class="stat-list">
-      {stats.map( ({id, label, percentage}) => (
-      <li class="item" key={id}>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}%</span>
-    </li>))}
+    <ul class="stat-list">
+      
+      {stats.map( item => (
+        <li class="item" key={item.id}>
+          <StatisticsItem item={item} />
+        </li>))}
   </ul>
 </section>
 }
