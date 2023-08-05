@@ -1,5 +1,7 @@
+import { FriendListItem } from "./FriendListItem"
+
 export const FriendList = () => {
   return <ul class="friend-list">
-  <!-- Довільна кіл-сть FriendListItem -->
+    <FriendListItem/>
 </ul>
 }
