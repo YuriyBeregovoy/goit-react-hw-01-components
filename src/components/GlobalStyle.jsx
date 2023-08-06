@@ -6,26 +6,10 @@ import "modern-normalize"
 export const GlobalStyle = createGlobalStyle`
 
 
-:root {
-  --page-background-color: #ffffff;
-  --body-text-color: #434455;
-  --title-section-color: #2e2f42;
-  --primary-brand-color: #4d5ae5;
-  --pressed-state-color: #404bbf;
-  --light-mode-color: #f4f4fd;
-  --accent-botton-color: #e7e9fc;
-  --bg-gradient-color: rgba(46, 47, 66, 0.7);
-  --light-slate-color: #8e8f99;
-  --success-color: #31d0aa;
-  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --bg-modal-color: #fcfcfc;
-}
-
-
 
 body {
   min-width: 320px;
-  background-color: var(--light-mode-color);
+  background-color: theme.colors.lightModeColor;
   color: var(--body-text-color);
   font-family: 'Roboto', 'sans-serif';
   font-size: 16px;
@@ -75,12 +59,5 @@ address{
   font-style: normal;
 }
 
-.container {
-  width: 100%;
-  max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 `;

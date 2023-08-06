@@ -1,6 +1,7 @@
 import { FriendList } from "./FriendList/FriendList";
 import freinds from "./FriendList/friends.json"
 import { GlobalStyle } from "./GlobalStyle";
+import { Layout } from "./Layout";
 import { Profile } from "./Profile/Profile";
 import user from "./Profile/user.json"
 import { Statistics } from "./Statistics/Statistics";
@@ -11,7 +12,7 @@ import transactions from "./TransactionHistory/transactions.json"
 export const App = () => {
  
   return (
-    <div>
+    <Layout>
      <Profile
   username={user.username}
   tag={user.tag}
@@ -23,7 +24,7 @@ export const App = () => {
       <FriendList freinds={freinds} />
       <TransactionHistory items={transactions} />
       <GlobalStyle/>
-    </div>
+    </Layout>
   );
 };
 
