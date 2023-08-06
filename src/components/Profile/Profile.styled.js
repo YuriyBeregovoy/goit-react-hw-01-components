@@ -31,7 +31,7 @@ export const StatsItem = styled.li`
 display: flex;
 flex-direction:column;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
     background-color: ${(props) => props.theme.colors.lightModeColor};
 border: 1px solid ${(props) => props.theme.colors.accentBottonColor};
 `;
@@ -42,6 +42,7 @@ font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+     color: ${(props) => props.theme.colors.titleSectionColor};
 `;
 
 export const Quantity = styled.span`
@@ -49,4 +50,5 @@ font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.01em;
+    color: ${(props) => props.theme.colors.titleSectionColor};
 `;
