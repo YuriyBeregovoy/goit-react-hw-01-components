@@ -9,10 +9,11 @@ import data from "./Statistics/data.json"
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import transactions from "./TransactionHistory/transactions.json"
 
+
 export const App = () => {
  
   return (
-    <Layout>
+    <Layout >
      <Profile
   username={user.username}
   tag={user.tag}

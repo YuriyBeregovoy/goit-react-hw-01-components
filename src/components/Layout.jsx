@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Layout = styled.div`
 
   width: 100%;
@@ -8,5 +9,6 @@ export const Layout = styled.div`
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+ background-color: ${(props) => props.theme.colors.lightModeColor};
 
 `;

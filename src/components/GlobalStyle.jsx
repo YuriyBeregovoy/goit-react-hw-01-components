@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   min-width: 320px;
-  background-color: theme.colors.lightModeColor;
+  
   color: var(--body-text-color);
   font-family: 'Roboto', 'sans-serif';
   font-size: 16px;
