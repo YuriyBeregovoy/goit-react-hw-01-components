@@ -9,10 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   min-width: 320px;
-  
-  color: var(--body-text-color);
-  font-family: 'Roboto', 'sans-serif';
-  font-size: 16px;
+    color: ${(props) => props.theme.colors.bodyTextColor};
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }

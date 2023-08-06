@@ -1,4 +1,4 @@
-import { Description, Stats, StatsItem, UserAvatar, Wrapper } from "./Profile.styled"
+import { Description, Name, Quantity, Stats, StatsItem, UserAvatar, Wrapper } from "./Profile.styled"
 
 
 
@@ -12,7 +12,7 @@ export const Profile = ({ avatar, location, stats, tag, username }) => {
         class="avatar"
         width="200"
     />
-    <p class="name">{username}</p>
+    <Name class="name">{username}</Name>
     <p class="tag">@{tag}</p>
     <p class="location">{location}</p>
   </Description>
@@ -20,15 +20,15 @@ export const Profile = ({ avatar, location, stats, tag, username }) => {
   <Stats class="stats">
     <StatsItem>
       <span class="label">Followers</span>
-        <span class="quantity">{stats.followers}</span>
+        <Quantity class="quantity">{stats.followers}</Quantity>
     </StatsItem>
     <StatsItem>
       <span class="label">Views</span>
-      <span class="quantity">{stats.views}</span>
+      <Quantity class="quantity">{stats.views}</Quantity>
     </StatsItem>
     <StatsItem>
       <span class="label">Likes</span>
-      <span class="quantity">{stats.likes}</span>
+      <Quantity class="quantity">{stats.likes}</Quantity>
     </StatsItem>
   </Stats>
 </Wrapper>

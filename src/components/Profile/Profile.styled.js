@@ -5,7 +5,7 @@ export const UserAvatar = styled.img`
     width: 100px;
     border-radius: 100%;
  background-color: ${(props) => props.theme.colors.lightModeColor};
-
+margin-bottom: 20px;
 `;
 
 export const Description = styled.div`
@@ -34,4 +34,19 @@ flex-direction:column;
   padding: 10px;
     background-color: ${(props) => props.theme.colors.lightModeColor};
 border: 1px solid ${(props) => props.theme.colors.accentBottonColor};
+`;
+
+
+export const Name = styled.p`
+font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+`;
+
+export const Quantity = styled.span`
+font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
 `;
