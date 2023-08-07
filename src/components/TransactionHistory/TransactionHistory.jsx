@@ -1,20 +1,21 @@
+import { ColumnTbody, ColumnTh, ColumnThead, ColumnTr, Wrapper } from "./TransactionHistory.styled"
 import { TransactionRows } from "./TransactionRows"
 
 export const TransactionHistory = ({ items }) => {
-  return   <table class="transaction-history">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
-  </thead>
+  return   <Wrapper class="transaction-history">
+  <ColumnThead>
+    <ColumnTr>
+      <ColumnTh>Type</ColumnTh>
+      <ColumnTh>Amount</ColumnTh>
+      <ColumnTh>Currency</ColumnTh>
+    </ColumnTr>
+  </ColumnThead>
 
   <tbody>
       {items.map(item => (
-        <tr key={item.id}>
+        <ColumnTr key={item.id}>
           <TransactionRows item={item} />
-    </tr>))}
+    </ColumnTr>))}
      </tbody>
-</table>
+</Wrapper>
 }
