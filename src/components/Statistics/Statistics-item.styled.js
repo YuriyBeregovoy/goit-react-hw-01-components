@@ -12,6 +12,8 @@ background-color: ${(props) => {
       return "red"
     case ".psd":
       return "green"
+    default:
+        return "gray";
   }
  }};
 
