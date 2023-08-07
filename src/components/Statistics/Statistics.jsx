@@ -1,18 +1,19 @@
 import { StatisticsItem } from "./Statistics-item"
+import { List, Stats, Title} from "./Statistics.styled"
 
 export const Statistics = ({ title, stats }) => {
  
-  return <section class="statistics">
-  {title && <h2 class="title">{title}</h2>}
+  return <Stats class="statistics">
+  {title && <Title class="title">{title}</Title>}
 
-    <ul class="stat-list">
+    <List class="stat-list">
       
       {stats.map( item => (
-        <li class="item" key={item.id}>
+        <List class="item" key={item.id}>
           <StatisticsItem item={item} />
-        </li>))}
-  </ul>
-</section>
+        </List>))}
+    </List>
+  </Stats>
 }
 
 

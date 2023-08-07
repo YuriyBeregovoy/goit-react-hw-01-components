@@ -12,13 +12,16 @@ export const Description = styled.div`
   display: flex;
   flex-direction:column;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
 `;
 
 export const Wrapper = styled.div`
+max-width: 367px;
   background-color: ${(props) => props.theme.colors.pageBackgroundColor};
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+
+    margin-bottom: 40px;
 `;
 
 
@@ -28,6 +31,7 @@ justify-content:space-between;
 `;
 
 export const StatsItem = styled.li`
+width: 100%;
 display: flex;
 flex-direction:column;
   align-items: center;
