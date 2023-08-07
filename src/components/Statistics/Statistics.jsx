@@ -10,7 +10,7 @@ export const Statistics = ({ title, stats }) => {
       
       {stats.map( item => (
         <List class="item" key={item.id}>
-          <StatisticsItem item={item} />
+          <StatisticsItem item={item}  />
         </List>))}
     </List>
   </Stats>
