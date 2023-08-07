@@ -4,31 +4,31 @@ import { Description, Name, Quantity, Stats, StatsItem, UserAvatar, Wrapper } fr
 
 export const Profile = ({ avatar, location, stats, tag, username }) => {
 
-  return <Wrapper class="profile">
-  <Description class="description">
+  return <Wrapper className="profile">
+  <Description className="description">
     <UserAvatar
       src={avatar}
       alt="User avatar"
-        class="avatar"
+        className="avatar"
         width="200"
     />
     <Name class="name">{username}</Name>
-    <p class="tag">@{tag}</p>
-    <p class="location">{location}</p>
+    <p className="tag">@{tag}</p>
+    <p className="location">{location}</p>
   </Description>
 
-  <Stats class="stats">
+  <Stats className="stats">
     <StatsItem>
-      <span class="label">Followers</span>
-        <Quantity class="quantity">{stats.followers}</Quantity>
+      <span className="label">Followers</span>
+        <Quantity className="quantity">{stats.followers}</Quantity>
     </StatsItem>
     <StatsItem>
-      <span class="label">Views</span>
-      <Quantity class="quantity">{stats.views}</Quantity>
+      <span className="label">Views</span>
+      <Quantity className="quantity">{stats.views}</Quantity>
     </StatsItem>
     <StatsItem>
-      <span class="label">Likes</span>
-      <Quantity class="quantity">{stats.likes}</Quantity>
+      <span className="label">Likes</span>
+      <Quantity className="quantity">{stats.likes}</Quantity>
     </StatsItem>
   </Stats>
 </Wrapper>

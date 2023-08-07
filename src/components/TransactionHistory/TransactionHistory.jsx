@@ -2,7 +2,7 @@ import { ColumnTh, ColumnThead, ColumnTr, Wrapper } from "./TransactionHistory.s
 import { TransactionRows } from "./TransactionRows"
 
 export const TransactionHistory = ({ items }) => {
-  return   <Wrapper class="transaction-history">
+  return   <Wrapper className="transaction-history">
   <ColumnThead>
     <ColumnTr>
       <ColumnTh>Type</ColumnTh>
