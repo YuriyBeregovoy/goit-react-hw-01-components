@@ -1,4 +1,4 @@
-import { ColumnTbody, ColumnTh, ColumnThead, ColumnTr, Wrapper } from "./TransactionHistory.styled"
+import { ColumnTh, ColumnThead, ColumnTr, Wrapper } from "./TransactionHistory.styled"
 import { TransactionRows } from "./TransactionRows"
 
 export const TransactionHistory = ({ items }) => {

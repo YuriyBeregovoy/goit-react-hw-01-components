@@ -15,4 +15,5 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 export const List = styled.ul`
 width: 230px;
+margin-bottom: 40px;
 `;
